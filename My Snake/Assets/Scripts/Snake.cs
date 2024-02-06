@@ -9,10 +9,16 @@ public class Snake : MonoBehaviour
     [SerializeField] private float speed;
 
     private void Start()
-    {
+    {   
         _segments = new List<Transform>();
         _segments.Add(this.transform);
     }
+
+    public int getScore()
+    {
+        return _segments.Count;
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.UpArrow))
@@ -70,9 +76,18 @@ public class Snake : MonoBehaviour
         if (collision.tag == "Apple")
         {
             Grow();
+            updateHighScore();
         } else if (collision.tag == "Obstacle")
         {
             ResetState();
+        }
+    }
+
+    private void updateHighScore ()
+    {
+        if (PlayerPrefs.GetInt("HighScore") < _segments.Count)
+        {
+            PlayerPrefs.SetInt("HighScore", _segments.Count);
         }
     }
 }

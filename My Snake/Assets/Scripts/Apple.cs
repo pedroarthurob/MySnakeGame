@@ -6,7 +6,7 @@ public class Apple : MonoBehaviour
 
     private void Start()
     {
-        RandomizeSpawn();
+        RandomizeSpawn();        
     }
     private void RandomizeSpawn()
     {
