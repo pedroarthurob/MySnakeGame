@@ -21,5 +21,5 @@
 </ul>
 
 <h2> Little Showdown </h2>
-![](https://github.com/pedroarthurob/MyGIFS/blob/main/Vídeo%20sem%20título%20‐%20Feito%20com%20o%20Clipchamp%20(1).gif)
+![](https://github.com/pedroarthurob/MySnakeGame/blob/main/Vídeo%20sem%20título%20‐%20Feito%20com%20o%20Clipchamp%20(1).gif)
 <p> Here you can clearly see everything I said above and also, how bad I play this game</p>
